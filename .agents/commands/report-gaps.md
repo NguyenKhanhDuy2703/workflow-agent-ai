@@ -10,11 +10,11 @@ Analysis finds missing documents, unclear decisions, or conflicts; also run to c
 
 ## Steps
 1. Group gaps by missing input, ambiguous requirement, and source/design conflict.
-2. For each gap, state the affected topic/version, why it matters, the stage it blocks, and the specific user decision or document needed. For a conflict, name both sources; do not invent a priority between them.
+2. For each gap, state the affected topic/version, why it matters, the stage it blocks, and the specific decision, document or evidence needed. Name both sources in a conflict. Distinguish code defects from changed intent; AI may make supported technical decisions within scope, but must ask for unresolved business requirements or conflicting user constraints.
 3. Distinguish blocking gaps from non-blocking open questions. Continue only work independent of blocking gaps, as allowed by `RULES.md`.
 
 ## Output
 A Missing Documents and Open Questions report, or an explicit statement that no gap was found.
 
 ## Done when
-The user can answer or supply each blocking item without guessing what the agent needs.
+Each blocking item has a concrete resolution path, and AI approval cannot silently waive it.

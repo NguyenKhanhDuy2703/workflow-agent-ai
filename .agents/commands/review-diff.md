@@ -11,6 +11,7 @@ Before reporting a completed implementation or when reviewing partial work.
 ## Steps
 1. Compare the diff with the planned scope and each relevant acceptance criterion.
 2. Inspect module boundaries, data ownership, regressions, unrelated edits, missing tests, contract mismatch, migration impact, and accidental inclusion of sensitive data.
+   For NestJS use [delivery contracts](../references/nestjs/delivery-contracts.md) and [verification guidance](../references/nestjs/verification.md): check module/DI reachability, actual DTO rules under configured pipes, authentication/policy wiring and principal fields, response/error compatibility, selected persistence fields, transaction-client use, state/concurrency handling and affected clients. Assess only applicable risks; reference patterns are not automatically approved policies.
 3. Record actionable findings with file and location. Distinguish confirmed defects from uncertainty; do not silently change approved behavior during review.
 
 ## Output
